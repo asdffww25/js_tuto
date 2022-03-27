@@ -1,0 +1,106 @@
+h1{
+    font-size:50px;
+}
+.color1{
+    font-size: 30px;
+    color: orange;
+}
+.color2{
+    font-size: 30px;
+    color: #61F96B;
+}
+.color3{
+    font-size: 30px;
+    color: rgb(155,84,66);
+}
+.Paragraph{
+    background-color: #eee;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.weight1{
+    font-size: 30px;
+    font-weight: 100;
+}
+.weight2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.weight3{
+    font-size: 30px;
+    font-weight: 900;
+}
+.align1{
+    text-align: left;
+}
+.align2{
+    text-align: center;
+}
+.align3{
+    text-align: right;
+}
+.decoration1{
+    text-decoration: underline;
+}
+.decoration2{
+    text-decoration: overline;
+}
+.decoration3{
+    text-decoration: line-through;
+}
+.decoration4{
+    text-decoration: none;
+}
+.center1{
+    text-align: center;
+}
+a{
+    text-align: center;
+}
+.Paragraph .menu{
+    text-align: center;
+}
+.div1{
+    font-size:24px;
+}
+.div1 .div2{
+    font-size: 24pt;
+}
+.div1 .div2 .div3{ 
+    font-size: 24px;
+}
+.div7{
+    font-size: 16px;
+}
+.div7 .div4{
+    font-size: 100%
+}
+.div7 .div4 .div5{
+    font-size: 2em;
+}
+.div7 .div4 .div5 .div6{
+    font-size: 50%;
+}
+.font1{
+    font-family: "Times New Roman", Times, serif;
+}
+.font2{
+    font-family: 'Roboto', sans-serif;
+}
+.font3{
+    font-family: 'Palette Mosaic', cursive;
+}
+.font4{
+    font-family: 'Hanna', sans-serif;
+}
+@font-face{
+    src: url("../fonts/BMJUA_ttf.ttf");
+    font-family:'Bmjua';
+}
+.font5{
+    font-family: "Bmjua";
+}

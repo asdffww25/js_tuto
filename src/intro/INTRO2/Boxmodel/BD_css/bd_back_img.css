@@ -1,0 +1,8 @@
+.div1{
+    height: 500px;
+    border: 5px solid green;
+    background-image: url("../../../INTRO1/images/YooA.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}

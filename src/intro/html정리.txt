@@ -1,0 +1,127 @@
+<title>제목</title>
+<meta charset="utf-8">  //한글지원이 안되는 브라우저일때 사용
+<h1>큰 글씨의 슬로건</h1>
+<h2>좀더 작은 글씨의 슬로건</h2>
+<h3>조금더어 작은 글씨의 슬로건</h3>
+...h6까지 작성 가능
+<p>엄청 긴 문단</p>
+
+
+<b>텍스트를 굵게</b>  // 태그 사이에 사용 가능
+<i>텍스트를 날려서</i>  // 태그 사이에 사용 가능
+<br>한줄 띄어쓰기
+<!--코멘트--> html에서의 코멘트 사용법 //파이썬에서 #과 자바에서//과 같음
+/* 코멘트 */  css에서의 코멘트 사용법
+
+<body>페이지에 나오는 내용을 감싸준다,,,,, h1..h6, p..등등</body>
+<head>제목,css,JS등 내용 외의 것들이 들어간다,,,,,,title, meta, style..등등</body>
+<html>이 사이에 있는건 모두 html코드이다.~~~ 헤드와 바디태그를 포함한다.</html>
+<a>링크를 달아줄수있다,</a>
+..<a href="가고싶은주소">웹사이트에 표시되는 링크이름</a> 현페이지 자체를 그 주소로 옮긴다.
+..<a href="가고싶은주소" target="_blank>웹사이트에 표시되는 링크이름</a>
+                              이렇게 하면 새로운창을 만들어서 해당 주소로 간다.
+<img src="해당 이미지가 있는 주소.jpg> 종료태그가없음
+<img src="해당 이미지가 있는 주소.jpg width="" height="">해서 가로세로 길이를 조정하는데 하나만 하면 그거에 맞게 다른것도 비율조정이 된다.
+
+이미지를 가운데로 정렬하고싶을때 사용하는 코드
+img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+class = 일종의 이름으로 <h1 class="blue-text">이렇게 작성한다.
+<p></p>문단이 여러개일경우 class를 사용해서 문단을 특정할수있다.
+css에서 class를 사용할때는 .class이름{ css내용 }을 해준다.
+html에서 한 요소에 여러 클래스를 넣어줄수있다.
+
+id = 클래스와 유사하게 사용하지만 단 하나의 요소만 가질수 있다.
+즉 class="big blue"처럼 두가지의 클래스를 가질수 있지만 id="big blue"는 불가능하다
+또한 한 클래스가 여러 요소에 들어갈수있지만 id는 하나의 요소에 하나의 id만 가능하다
+
+클래스와 다르게 css에서 사용할때는 #으로 시작한다.
+
+여러 요소를 스타일링 하고 싶으면 class를 사용하고
+한 요소만 스타일링 하고 싶으면 id를 사용한다.
+
+
+<div></div> 태그는 일종의 묶음으로 사용한다.
+마찬가지로 class를 사용할수 있다.
+div클래스의 다른 요소의 클래스를 사용할때는  .div_class .p_class{} 처럼 연속해서 사용한다.
+
+css파일 따로 쓰기/link로 연결하기
+html파일안에 style을 여러번 쓰기보다는 따로 css파일을 만들어서 한번에 처리하면 좋다
+<link href="../css/styles.css" rel="stylesheet"> 이런 형식으로 <head>부분에서 링크를 해주면 지정해둔 css파일대로 스타일링이 된다.
+
+<h1 style="color: red;">처럼 css를 바로 적용시킬수도 있다.
+<style>이제부터 css를 사용하겠다</style>
+h1{
+    h1의 스타일을 바꾼다.
+    font-size: 64px;  //폰트사이즈를 64픽셀으로 만들어준다.
+    text-align: center;  //텍스트를 중앙으로 옮겨준다. left, right, center사용 가능
+    color: lime;  // 글자에 색을 입혀줄수도 있다.
+}
+h3{
+    h3의 스타일을 바꾼다.
+    margin-top: 100px;  //h3의 문장의 윗 부분을100px만큼의 여백을 만들어준다..
+                             // bottom, left,으로 여백을 만들어줄수있다.
+}
+i {
+    모든 i태그의 스타일을 바꿔준다.
+}
+
+p i{
+   p태그 안에 있는 i태그만 바꿔준다. 
+}
+===========텍스트 스타일링===============
+텍스트 색
+간단하게 바꿀때는 red, blue, orange같은 단어식으로 색을 바꿀수있다.
+또는 RGB로 색을 수치화해서 바꿀수있다.  ex) #61F96B or rgb(97,249,107)
+
+폰트 굵기
+font-weight: 100~900;  100단위로만 설정할수있다.
+font-weight: normal;은 400과 같고
+font-weight: bord;는 700과 같다.
+브라우저 따라서 사용가능 굵기가 정해져있다.
+
+
+
+텍스트 정렬
+text-align: left/center/right;   지정안해주면 왼쪽으로 정렬됨
+
+텍스트에 선 그리기
+text-decoration: underline/overline/line-through;
+a{
+    text-decoration: none;
+}처럼 해주면 a태그에 링크를 달아줄때 밑줄을 없애줄수도있다.
+
+일반적으로 텍스트를 text-align: center;로 가운데로 보낼수있지만
+a태그로 만든 링크는 가로축이 딱 그 글씨만큼만 지정되어서 불가능하다
+이럴때는 <div></div>로 감싸서 div태그 자체를 가운데로 보내면 된다.
+
+폰트 크기 설정법
+절대적 : px, pt  = 사이즈를 직접 정해줌
+상대적 : em, %  = 바로 윗 클래스에 영향을 받음
+
+폰트 설정
+Serif폰트 = Times New Roman, 궁서체 //끝쪽이 구부려져있음
+Sans-Serif = Arial, 굴림체  //끝이 깔끔함
+Monospace = Courier, Courier New // 모든 글자가 같은 넓이를 가짐
+Cursive = Comic Sans MS, Monotype Coriva // 필기체
+Fantasy = Impact, Haettenschweiler // 나머지 글꼴
+css에서는 font-family: "Times New Roman";해주는데
+내 pc에서 저장되어있지 않는 경우엔 제2폰트를 성정해주고 또 아예 큰 카테고리를 써줄수있다.
+font-family: "Times New Roman", Times, serif; // 이러면 Times New Roman이 없으면 Times를 사용하고  Times도 없으면 pc에 저장되어있는 serif폰트중에 하나를 사용한다.
+제2폰트에서는 큰따옴표 생략 가능
+
+따로 폰트를 다운받아서 쓸려면 일단 폰트를 다운받고 css파일에 가서
+@font-face{
+    src: url("../fonts/BMJUA_ttf.ttf");
+    font-family:'Bmjua';
+}
+.font5{
+    font-family: "Bmjua";
+}를 입력해준다.
+
+
+긴~~~~~~글에서 어떤 몇 줄만 텍스트스타일링 해주고싶으면  div대신 span을 써주면 된다.  

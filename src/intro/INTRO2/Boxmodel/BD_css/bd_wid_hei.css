@@ -1,0 +1,29 @@
+h1{
+    border:5px solid red;
+}
+.p1{
+    border-top: 30px dotted #4d9fff;
+    border-bottom: 2px dashed red;
+    border-left: 5px solid green;
+    border-right: 10px solid #115f2a;
+    width: 500px;
+    height: 500px;
+}
+.p2{
+    border:5px solid red;
+    min-width: 500px;
+}
+.p3{
+    border:5px solid red;
+    max-width: 500px;
+}
+.p4{
+    border:5px solid red;
+    max-height: 50px;
+    overflow: hidden;
+}
+.p5{
+    border:5px solid red;
+    max-height: 100px;
+    overflow: scroll;
+}

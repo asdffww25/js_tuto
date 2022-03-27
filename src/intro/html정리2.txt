@@ -1,0 +1,94 @@
+기본적으로 html은 박스형태로 이루어져있다
+실제내용이있고 테두리(border)이 있으며 그 사이에 여유공간(padding)이 있다
+현재 요소와 다른요소 사이의 여백(margin)
+
+border설정법======================
+border: 선두깨(px) 선종류(solid/dotted/dashed...) 색;
+border: 5px solid red;  //빨간 5px크기의 테두리를 만든다.
+border-style: 선종류;
+border-color: 색;
+border-width: 선 굵기;
+border-top/bottom/left/right: 3px solid red;를 하면 각각 상하좌우 나눠서 테두리를 정의할수있다.
+border: none;나 border:0; 을 쓰면 테두리를 없앨수있다.
+border-radius: 10px; 를 입력하면 테두리의 모서리가 둥근모양이 된다.
+background-color: red;처럼 배경색을 입힐수도있다 이대 색은 폰트색처럼 3가지로 할수있다.  색 설정을 transparent로 하면 투명으로 된다 즉 기본값이다/
+
+box-shadow:가로 세로 흐림정도 그림자크기색;
+box-shadow:50px -30px 50px 10px red;
+
+box-sizing: border-box;를 사용하면 width:300; height:200; padding:35; border:5사이즈에 맞춰서 padding과 border의 사이즈를 고려해서 width와 height의 사이즈를 조절해준다.
+최종적으로 내용+padding+border의 값을 합쳐서 width=300px, height=200의 사이즈가 완성이된다.
+css에서 전체적으로 같은 설정을 주고 싶을땐 *{}을 사용하면 된다.
+
+
+
+
+margin-top/bottom/left/right:50px;처럼 요소들사이의 거리를 둘 수있다.
+
+width, height사용법======================
+width: 500px;
+height: 300px;
+위 두개를 사용해서 내용 자체의 크기를 늘릴수도있다.
+
+min-width를 사용하면 브라우저의 크기가 늘어나면 자율적으로 늘어나지만 반대로 줄어들면 500px밑으로는 안줄어든다
+반대로 max-width를 사용하면 자율적으로 줄어들지만 최대 500px만큼만 늘어난다
+또한
+height에도 적용할수있는데 max-height를 쓴 후에 최대값보다 많은 내용이 입력되면 overflow가 일어난다
+
+overflow일어났을때==================
+overflow: hidden;을 입력하면 overflow부분이 숨겨진다.
+hidden대신 visible를 입력하면 처음처럼 넘치게 보인다. 즉 기본값이 visible이다.
+scroll를 쓰면 스크롤로 숨겨진 내용을 볼 수 있다.
+auto를 쓰면 내용이 넘칠때만 스크롤이 생기고 scroll은 내용이 안넘쳐도 스크롤이 있다.
+
+
+padding설정법============
+padding-top/bottom/left/right: 50px; 를 사용해서 내용과 테두리 사이의 간격을 조절할수있다.
+padding: 50px 65px 20px 80px; .//이처럼 한줄로 top부터 시작해서 오른쪽 아래 왼쪽순으로 설정할수있다.
+padding: 50px;로 하면 상하좌우 전부 50px로 조정됨
+padding: 50px 20px;로 하면 상하 50px, 좌우 20px로 조정됨
+
+margin설정법============
+padding과 같이
+margin-top/bottom/left/right: 50px;로 할수도있고
+margin:80px 30px 25px 70px;처럼 top부터 시계방향으로 설정해줄수도 있고
+margin: 50px; 처럼 상하좌우 같은 값을 넣을수도 있고
+margin: 50px 25px;처럼 위아래, 좌우 각각 넣을수있다.
+
+요소를 가운데 정렬하고싶으면
+margin-left: auto;
+margin-right: auto;를 해주면 되는데 이는 브라우저에서 알아서 계산하라는 의미이다
+또 위아래는 따로 지정해주고싶으면
+margin: 20px auto;를 해주면 상하는 20px로 해주고 좌우는 정가운데로 맞춰준다.
+
+
+
+배경사진 설정===========================================
+
+background-image: url("../../../INTRO1/images/YooA.jpeg");
+= "" 안에 사진의 경로를 입력해줘서 사진을 가져온다
+
+background-repeat: no-repeat;
+=주어진 크기에비해 사진의 크기가 작을때 사진을 반복시켜준다.
+repeat-x = 가로방향으로만 반복
+repeat-y = 세로방향으로만 반복
+repeat = 가로세로 모두 반복
+space = 반복할수있는 만큼 반복한 뒤 남은 공간은 이미지 간의 여백으로 배분
+round = 반복할 수 있는 만큼 반복한 뒤, 남은 공간은 이미지 확대를 통해 배분
+
+
+
+background-size: cover;
+=cover대신 px이나 %처럼 단위로 설정해도된다, cover로 하면 주어진 크기에 상관없이 원본사진을 넣어준다..
+auto = 원래 이미지 사이즈대로 출력
+cover = 화면을 꽉 채우면서, 사진 비율을 유지
+contain = 가로, 세로 중 먼저 채워지는 쪽에 맞추어서 출력
+30px 50px = 픽셀값을 지정
+60% 70% = 퍼센트값 지정
+
+
+background-position: top center;
+=주어진 공간에 비해 사진의 크기가 클경우 어떤부분을 보여줄지 나타내준다.//보여지는곳의 초점을 비춰줌
+[left top, left center, left bottom, right top, right cenrer, righr bottom, center top, center center, center bottom] 총 9개 조합 가능
+25% 75% = 퍼센트로 조절가능(가로: 전체 width의 25%지점, 세로: 전체height의 75%지점)
+100px 200px = 픽셀로 조절 가능(가로:가장왼쪽가장자리에서 오른쪽으로 100px이동한지점, 세로: 가장 상단 가장자리에서 아래로 200px 이동한 지점)

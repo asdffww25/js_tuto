@@ -1,0 +1,25 @@
+display============================
+종류 = inline, block, inline-block, flex, list-item, none
+
+
+inline display = 다른 요소들과 같은 줄에 머무르려고 하는 성향
+                    가로길이는 딱 필요한 만큼만 차지하는 성향
+                    width, height로 크기를 변경할수 없음
+	        (span, a, b, i, img, button)태그
+block display = 새로운 줄에 가려고 하는 성향
+                    가로길이는 최대한 많이 차지하려고함
+	        width, height로 크기를 변경 할 수 있음
+	        (div, h1....6, p, nav, ul, li)태그
+display바꾸기----------------------
+css에서 display: inline, block, inline-block, flex, list-item, none; 중에 하나 입력하면됨
+
+inline-block = inline과 block의 특성을 반반씩 가짐 다른 요소들과 같은 줄에 머무르려고 하면서 width, height로 크기를 변겅 할 수 있음
+
+img태그는 inline display면서 가로세로 길이를 설정할수 있다.
+inline은 텍스트처럼 사용할수 있다.
+vertical-align: top; 를 사용하면 사진도 적용이 된다.
+text-align: center; 도 적용이 된다.
+
+링크설정=======================================
+a태그 사이에 텍스트 대신 그림을 넣었을때 그림을 클릭하면 해당 주소로 간다.
+이를 이용해 div태그처럼 a태그 사이에 여러 텍스트를 넣어서 한 box전부에 링크를 걸어주고 꾸밀수 있다.
